@@ -1,0 +1,11 @@
+package com.example.semestralka.ui.navigation
+
+import androidx.annotation.DrawableRes
+
+data class BottomNavItem(
+    val route: String,
+    val label: String,
+    @DrawableRes val iconId: Int,
+    val contentDescription: String,
+    val onClick: () -> Unit
+)
